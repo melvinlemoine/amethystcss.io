@@ -1,0 +1,45 @@
+<div class="nav">
+
+    <div class="container flex-r v-centered space-between">
+
+        <a class="nav__logo flex-c v-centered" href="{{site.url}}">
+            <img class="nav__logo_img" src="{{site.url}}/assets/images/logo_full.png" alt="Amethyst logo" />
+        </a>
+
+        <ul class="nav__menus flex">
+
+            {% for menu in site.data.main.navigation.menus %}
+
+            {% if menu.available != false %}
+            <li class="nav__menus_menu flex">
+                <a href="{{site.url}}{{ menu.permalink }}" class="nav__menus_menu_a fs-4 p-3 br-2 {{menu.color}}">
+                    <span class="icon mr-1">
+                        <i class="{{menu.icon}} c-{{menu.color}}"></i>
+                    </span>
+                    <span>{{ menu.title }}</span>
+                </a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+
+        <ul class="nav__buttons">
+            {% for button in site.data.main.navigation.buttons %}
+
+            <li class="nav__buttons_button flex">
+                <a href="{{site.url}}{{ button.permalink }}" class="nav__buttons_button_a button p-3 br-2">
+                    <span class="icon">
+                        <i class="{{button.icon}}"></i>
+                    </span>
+                    {{ button.title }}
+                </a>
+            </li>
+
+            {% endfor %}
+        </ul>
+
+    </div>
+
+</div>
