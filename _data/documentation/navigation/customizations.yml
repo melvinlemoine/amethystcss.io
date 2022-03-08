@@ -1,0 +1,10 @@
+cat_title: Customizations
+menus:
+- title: font-size
+  permalink: /font-size
+
+- title: font-weight
+  permalink: /font-weight
+
+- title: text-transform
+  permalink: /text-transform

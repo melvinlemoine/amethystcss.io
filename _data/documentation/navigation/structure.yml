@@ -1,0 +1,7 @@
+cat_title: Structure
+menus:
+- title: Flex
+  permalink: flex
+
+- title: Grid
+  permalink: grid
