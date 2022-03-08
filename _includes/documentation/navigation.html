@@ -1,0 +1,24 @@
+<nav class="docnav">
+
+    <a class="docnav__ul_li_a semibold br-1 br-1 flex mb-3 {% if "/documentation" == page.url %}current{% endif %}"
+        href="{{site.url}}/documentation">Home</a>
+
+    {% for menu in site.data.documentation.navigation %}
+
+    <ul class="docnav__ul">
+        <li class="docnav__ul_title semibold br-1">{{menu[1].cat_title}}</li>
+
+        {% for menu in menu[1].menus %}
+        {% assign current = "/documentation" | append: menu.permalink %}
+
+        <li class="docnav__ul_li flex br-1 mt-1.5">
+            <a class="docnav__ul_li_a w-full {% if current == page.url %}current{% endif %}"
+                href="{{site.url}}/documentation{{menu.permalink}}">{{menu.title}}</a>
+        </li>
+
+        {% endfor %}
+    </ul>
+
+    {% endfor %}
+
+</nav>
