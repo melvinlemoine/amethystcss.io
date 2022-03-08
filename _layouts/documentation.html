@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/amethystcss/css/amethyst.css" />
+    <link rel="stylesheet" href="{{site.url}}/assets/css/styles.css" />
+
+    {% include head.html %}
+</head>
+
+<body class="body documentation {{ page.class }}">
+
+    {% include mainnavigation.html %}
+
+    {% include documentation/header.html %}
+
+    <main class="main mt-10">
+        <div class="container flex-r">
+
+            {% include documentation/navigation.html %}
+
+            <div class="content flex-c pl-10">
+                {{content}}
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
