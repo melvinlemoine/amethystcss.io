@@ -3,10 +3,20 @@
 
 <head>
     <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/amethystcss/css/amethyst.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
     {% include head.html %}
 </head>
 
-<body class="body">
+<body class="body {{ page.class }}">
+
+    {% include mainnavigation.html %}
+
+    <main>
+        {{content}}
+    </main>
 
 </body>
 
