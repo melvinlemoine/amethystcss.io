@@ -1,0 +1,21 @@
+$primary: #4700a5
+$secondary: #BF22E9
+
+$light: #f3f7fd
+$grey: #707070
+
+$blue: #2666CF
+$yellow: #FFD32D
+$orange: #FFB72B
+$green: #019267
+
+$colors: ("blue": $blue, "green": $green, "orange": $orange, "yellow": $yellow)
+
+@each $color, $value in $colors
+    .c-#{$color}
+        color: $value
+
+$br-normal: 0.25rem
+
+.br-normal
+    border-radius: $br-normal
