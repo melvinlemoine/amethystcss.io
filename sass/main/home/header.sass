@@ -1,0 +1,37 @@
+.header
+    min-height: 75vh
+    // background-color: $primary
+    color: $primary
+
+    &__amethyst
+        // opacity: .5
+        top: 0
+        left: -20rem
+        width: 40rem
+        // height: 25rem
+        transform: rotate(5deg)
+
+    &__content
+
+        &_title
+        &_description
+            a
+                text-decoration: underline
+                font-weight: 600
+                color: $primary
+
+        &_buttons
+            &_button
+                border: 2px solid transparent
+                background-color: $primary
+                color: white
+
+                &.is-outlined
+                    border: 2px solid $primary
+                    background-color: white
+                    color: $primary
+
+                    &:hover
+                        background-color: $primary
+                        color: white
+    &__illustration
