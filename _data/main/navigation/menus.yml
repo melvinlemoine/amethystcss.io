@@ -1,0 +1,21 @@
+- title: Home
+  icon: fa-solid fa-house
+  permalink: /
+  color: green
+
+- title: Documentation
+  icon: fa-solid fa-book
+  permalink: /documentation
+  color: blue
+
+- title: Expo
+  icon: fa-solid fa-star
+  permalink: /expo
+  color: yellow
+  available: false
+
+- title: Blog
+  icon: fa-solid fa-newspaper
+  permalink: /blog
+  color: orange
+  available: false
